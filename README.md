@@ -18,9 +18,8 @@
     - 변수
     - 자료형
     - 연산자
-
     ```python
-    # 이 부분은 주석입니다.
+    # 주석
     var01 = 10 # 정수, 실수, 불, 문자열 모두 가능
     print(var01)
     print(type(var01)) # <class of 'int'>
@@ -38,7 +37,6 @@
     - 복합자료형 + 연산자(연산함수)
     - 출력 포맷
     - 구구단 + 디버깅
-
 ```python
 # debugging : f9(중단점 토글), f5(디버그시작), f10(한줄씩 실행), f11(함수안으로 진입) > 이후 조사식 확인
 
@@ -63,7 +61,35 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
         - 캡슐화(__plateNumber)
     - 패키지, 모듈
 
-    - 객체지향(나중에)
-        - 오버로딩, 오버라이딩(재정의)
-        - 상속, 다중상속
-        - 추상클래스
+## 4일차
+- 파이썬 기초
+    - 패키지, 모듈 계속
+        - pip 사용
+        ```shell
+        > pip -- version # 버전확인
+        > pip list # 현재 설치 된 라이브러리 목록 확인
+        > pip install # 패키지를 내 컴퓨터에 설치
+        > pip uninstall # 패키지 삭제
+        ```
+
+    - 예외처리 : 비정상적인 프로그램 종료 막기
+    ```python
+    def divide(x, y) : 
+        try :
+            return x / y # 분모를 0으로 입력 시 예외발생(ZeroDivisionError)
+        except ZeroDivisionError as e :
+            print('[!!오류!!] 0으로 나눌 수 없습니다.')
+            return 0
+    ```
+
+    - 텍스트 파일 입출력
+    ```python
+    f = open('파일명', mode='r(읽기)'/'w(쓰기)'/'a(내용추가)', encoding='cp949(한국어)'/'utf-8(만국 공통어)')
+    f.read()
+    f.readline() # 읽기
+    f.write('text', 'text\n(끝에 줄바꿈)') # 쓰기
+    f.close() # 파일은 반드시 닫는다.
+    ```
+
+- 파이썬 활용
+    - 주피터 노트북
