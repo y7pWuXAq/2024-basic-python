@@ -93,3 +93,6 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
 
 - 파이썬 활용
     - 주피터 노트북
+        - ctrl + shift + P(명령 팔레트)로 시작
+        - 사용방법 (test31_jupyternb.ipynb) 참조.
+    - folium 기본 사용

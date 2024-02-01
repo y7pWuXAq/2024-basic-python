@@ -1,5 +1,5 @@
 # date : 20240201
-# file : test29_fileio_py
+# file : test29_fileio.py
 # desc : 텍스트 파일 읽기
 
 f = open('sample.txt', mode='r', encoding='utf-8')
