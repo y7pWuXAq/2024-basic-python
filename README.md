@@ -1,6 +1,7 @@
 # 파이썬 기초 2024
 부경대 2024 IoT 개발자과정 기초 프로그래밍 언어 - 파이썬
 
+
 ## 1일차
 - 개발환경 구축
     - 코딩폰트 - 나눔고딕코딩
@@ -28,6 +29,7 @@
     print(5 == 4) # False
     ```
 
+
 ## 2일차
 - 파이썬 기초
     - 흐름제어
@@ -48,6 +50,7 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
     print() # 안쪽 for문이 끝나면 마지막에 줄바꿈
 ```
 
+
 ## 3일차
 - 파이썬 기초
     - 입력 방법
@@ -61,6 +64,7 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
         - 캡슐화(__plateNumber)
     - 패키지, 모듈
 
+
 ## 4일차
 - 파이썬 기초
     - 패키지, 모듈 계속
@@ -68,8 +72,8 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
         ```shell
         > pip -- version # 버전확인
         > pip list # 현재 설치 된 라이브러리 목록 확인
-        > pip install # 패키지를 내 컴퓨터에 설치
-        > pip uninstall # 패키지 삭제
+        > pip install 패키지명 # 패키지를 내 컴퓨터에 설치
+        > pip uninstall 패키지명 # 패키지 삭제
         ```
 
     - 예외처리 : 비정상적인 프로그램 종료 막기
@@ -91,8 +95,14 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
     f.close() # 파일은 반드시 닫는다.
     ```
 
-- 파이썬 활용
+- 파이썬 응용
     - 주피터 노트북
         - ctrl + shift + P(명령 팔레트)로 시작
         - 사용방법 (test31_jupyternb.ipynb) 참조.
     - folium 기본 사용
+    ![folium사용법](https://raw.githubusercontent.com/y7pWuXAq/basic-python-2024/main/images/python_001.png)
+
+
+## 5일차
+- 파이썬 응용
+    - 주피터 노트북 활용 구글 코랩(Colab)
