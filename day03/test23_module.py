@@ -21,6 +21,6 @@ print(round(3.5)) # 반올림 (자주 사용해서 기본 함수에 있음)
 import math as m # 별명짓기 : as
 print(m.sin(2))
 
-from math import pi, pow # 주의해서 사용해야 함 // from ~~ pi랑 pow 만 쓰겠다는 의미ㅏ
+from math import pi, pow # 주의해서 사용해야 함 // from ~~ pi랑 pow 만 쓰겠다는 의미
 print(pi)
 print(pow(2,10))
