@@ -30,7 +30,7 @@ print(bit142)
 print(oct9)
 print(hex255)
 
-## 문자형 - 파이썬에는 문자, 문자열 차이가 없음
+## 문자형 - 파이썬에는 문자, 문자열 차이가 없음.
 greeting = 'Hello!'
 greeting = "Hello!" # 홑따옴표, 쌍따옴표, 모두 문자열을 나타냄
 print(greeting)
