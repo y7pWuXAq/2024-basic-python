@@ -105,4 +105,8 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
 
 ## 5일차
 - 파이썬 응용
-    - 주피터 노트북 활용 구글 코랩(Colab)
+    - 주피터 노트북 활용 : 구글 코랩(Colab)
+    - folium 활용 심화
+        - https://getbootstrap.com/docs/3.3/components/ : folium 아이콘 변경 사이트
+    - json 입출력
+    - 응용예제 연습
