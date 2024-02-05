@@ -124,5 +124,34 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
     ```
 
     - PyQt5 기본실행
+    - QtDesigner 사용법
+    - Thread 학습 : UI Thread와 Background Thread 분리
+        - GIL, 병렬프로세싱 더 학습 할 것
+
+    ![Thread예제](https://raw.githubusercontent.com/y7pWuXAq/basic-python-2024/main/images/python_003.gif)
+
+    ```python
+    # 쓰레드 클래스에서 시그널 선언
+    class BackWorker(QThread) : # PyQt에서 스레드 클래스 상속
+        initSignal = pyqtSignal(int) # 시그널을 UI 스레드로 전달하기 위한 변수 객체
+        setSignal = pyqtSignal(int)
+        # ... (생략) ...
+
+        def run(self) -> None : # 스레드 실행
+            # 스레드로 동작 할 내용
+            maxVal = 1000001
+            self.initSignal.emit(maxVal) # UI쓰레드로 내보내기
+            # ... (생략) ...
+
+    class qtwin_exam(QWidget) : # UI 쓰레드
+        # ... (생략) ...
+        def btnStartClicked(self) :
+            th = BackWorker(self)
+            th.start() # BackWorker 안에 있는 self.run()이 실행 됨.
+            th.initSignal.connect(self.initPgbTask) # 스레드에서 초기화 시그널이 오면 initPgbTask 함수가 대신 처리
+            th.setSignal.connect(self.setPgbTask)
+            th.setLog.connect(self.setTxbLog) # TextBrower 위젯에 진행사항 출력
+    ```
+       
 
 - 가상환경
