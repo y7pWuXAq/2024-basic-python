@@ -159,5 +159,5 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
             self.pgbTask.setRange(0, maxVal-1)
     ```
        
-
+       
 - 가상환경
