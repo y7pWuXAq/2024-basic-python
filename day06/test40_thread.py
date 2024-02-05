@@ -41,7 +41,7 @@ class qtwin_exam(QWidget) :
 
     def btnStartClicked(self) :
         th = BackWorker(self)
-        th.start() # BackWorker 안에 있는 self.run()이 실행 됨.
+        th.start() # BackWorker 안에 있는 self.run()이 실행이 된다.
         th.initSignal.connect(self.initPgbTask) # 스레드에서 초기화 시그널이 오면 initPgbTask 함수가 대신 처리
         th.setSignal.connect(self.setPgbTask)
         th.setLog.connect(self.setTxbLog) # TextBrower 위젯에 진행사항 출력
