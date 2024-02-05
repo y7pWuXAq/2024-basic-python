@@ -151,6 +151,12 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
             th.initSignal.connect(self.initPgbTask) # 스레드에서 초기화 시그널이 오면 initPgbTask 함수가 대신 처리
             th.setSignal.connect(self.setPgbTask)
             th.setLog.connect(self.setTxbLog) # TextBrower 위젯에 진행사항 출력
+    
+        # 스레드에서 시그널이 넘어오면 UI처리를 대신 해주는 슬롯 함수
+        @pyqtSlot(int) # BackWorker 스레드에서 self.initSignal.emit() 동작해서 실행
+        def initPgbTask(self, maxVal) :
+            self.pgbTask.setValue(0)
+            self.pgbTask.setRange(0, maxVal-1)
     ```
        
 
