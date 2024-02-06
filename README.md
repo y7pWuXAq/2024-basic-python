@@ -170,4 +170,5 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
     - PyQt5와 응용예제 연습
         - 이미지 뷰어
         - 이미지 에디터
+        
         ![Thread예제](https://raw.githubusercontent.com/y7pWuXAq/basic-python-2024/main/images/kitty01.png)
