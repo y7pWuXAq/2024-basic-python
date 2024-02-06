@@ -162,5 +162,12 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
 
 ## 7일차
 - 파이썬 응용
-     - 가상환경
-     - PyQt5와 응용예제 연습
+    - 객체지향
+        - 상속, 오버라이딩(재정의), 오버로딩(같은 이름의 함수를 여러개 사용, 매개변수는 달라야 함)
+    - 가상환경 Virtualenv
+        - 다른 버전 파이썬도 설치해야 사용 가능
+        - 현재 3.11에서 3.9 가상환경 만들려면 3.9버전 설치 필요
+    - PyQt5와 응용예제 연습
+        - 이미지 뷰어
+        - 이미지 에디터
+        ![Thread예제](https://raw.githubusercontent.com/y7pWuXAq/basic-python-2024/main/images/kitty01.png)
