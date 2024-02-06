@@ -24,7 +24,9 @@ class qtwin_exam(QWidget) :
     def btn01_clicked(self) :
         QMessageBox.about(self, '버튼클릭', '버튼을 클릭했습니다!')
 
-    def closeEvent(self, QCloseEvent) -> None:
+    # QWidget에 있는 CloseEvent를 그대로 쓰면 닫기 버튼 클릭 시 그냥 종료 됨
+    # 닫기 확인 팡을 물어보는 형태로 재정의 : Overrride
+    def closeEvent(self, QCloseEvent) -> None: 
         re = QMessageBox.question(self, '종료확인', '종료할래?', QMessageBox.Yes|QMessageBox.No)
         if re == QMessageBox.Yes : # 닫기
             QCloseEvent.accept()

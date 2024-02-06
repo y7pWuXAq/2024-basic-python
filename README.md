@@ -159,5 +159,8 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
             self.pgbTask.setRange(0, maxVal-1)
     ```
        
-       
-- 가상환경
+
+## 7일차
+- 파이썬 응용
+     - 가상환경
+     - PyQt5와 응용예제 연습
