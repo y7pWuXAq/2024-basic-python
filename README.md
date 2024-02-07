@@ -173,4 +173,12 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
         - 이미지 뷰어
         - 이미지 에디터
 
-        ![Thread예제](https://raw.githubusercontent.com/y7pWuXAq/basic-python-2024/main/images/kitty01.png)
+        ![PyQt예제](https://raw.githubusercontent.com/y7pWuXAq/basic-python-2024/main/images/kitty01.png)
+
+
+## 8일차
+- 파이썬 응용
+    - PyQt 응용예제 계속
+
+- 파이썬 기본 코딩 테스트
+    - 주피터 노트북 활용
