@@ -1,8 +1,10 @@
-# 파이썬 기초 2024
-부경대 2024 IoT 개발자과정 기초 프로그래밍 언어 - 파이썬
+## 2024-basic-python
+IoT 개발자과정 기초 프로그래밍 언어 파이썬 학습 리포지토리
 
 
-## 1일차
+
+### DAY 01
+
 - 개발환경 구축
     - 코딩폰트 - 나눔고딕코딩
     - Notepad++ 설치
@@ -30,7 +32,8 @@
     ```
 
 
-## 2일차
+### DAY 02
+
 - 파이썬 기초
     - 흐름제어
         - if : 참과 거짓으로 구분하기 (다른언어 switch)
@@ -51,7 +54,8 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
 ```
 
 
-## 3일차
+### DAY 03
+
 - 파이썬 기초
     - 입력 방법
     - 별찍기
@@ -65,7 +69,9 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
     - 패키지, 모듈
 
 
-## 4일차
+
+### DAY 04
+
 - 파이썬 기초
     - 패키지, 모듈 계속
         - pip 사용
@@ -103,7 +109,8 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
     ![folium사용법](https://raw.githubusercontent.com/y7pWuXAq/basic-python-2024/main/images/python_001.png)
 
 
-## 5일차
+### DAY 05
+
 - 파이썬 응용
     - 주피터 노트북 활용 : 구글 코랩(Colab)
     - folium 활용 심화
@@ -113,7 +120,9 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
         - IP 주소 만들기
         - QRCODE 만들기
 
-## 6일차
+
+
+### DAY 06
 - 파이썬 응용
     - 응용예제 연습
     - Window App(pyQt) 만들기
@@ -158,9 +167,11 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
             self.pgbTask.setValue(0)
             self.pgbTask.setRange(0, maxVal-1)
     ```
+
        
 
-## 7일차
+### DAY 07
+
 - 파이썬 응용
     - 객체지향
         - 상속, 오버라이딩(재정의), 오버로딩(같은 이름의 함수를 여러개 사용, 매개변수는 달라야 함)
@@ -176,14 +187,17 @@ for x in range(2, 9+1) : # 2단부터 9단까지 반복
         ![PyQt예제](https://raw.githubusercontent.com/y7pWuXAq/basic-python-2024/main/images/kitty01.png)
 
 
-## 8일차
+
+### DAY 08
 - 파이썬 응용
     - PyQt 응용예제 계속
 
 - 파이썬 기본 코딩 테스트
     - 주피터 노트북 활용
 
-## 추가
+
+
+### ETC
 - 파이썬 실행파일 만들기
     - PyQt ui 파일이나 이미지 파일의 경로를 절대경로가 지정
     - pip install pyinstaller 패키지 설치
